@@ -1,7 +1,5 @@
 <?php
 
-use App\Http\Controllers\GuestController;
-
 Auth::routes();
 Route::get('/', 'GuestController@Index');
 Route::get('/desc', 'GuestController@SortByDesc');

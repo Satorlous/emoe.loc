@@ -3,7 +3,6 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/emoe.loc.iml" filepath="$PROJECT_DIR$/.idea/emoe.loc.iml" />
-      <module fileurl="file://$PROJECT_DIR$/../schedule.loc/.idea/schedule.loc.iml" filepath="$PROJECT_DIR$/../schedule.loc/.idea/schedule.loc.iml" />
     </modules>
   </component>
 </project>
