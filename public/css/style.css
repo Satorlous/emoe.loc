@@ -1,0 +1,271 @@
+* {
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+}
+body {
+	height: 100%;
+}
+.wrapper {
+	max-width: 960px;
+	margin: 0 auto;
+}
+header {
+	height: 80px;
+	padding:0 15px 0 15px;
+	display: flex;
+	align-items: center;
+}
+header img {
+	width: 69px;
+	height: 61px;
+	margin-right: 18px;
+}
+.header_text p {
+	font-family: sans-serif;
+	font-size:14px;
+	line-height: 12px;
+}
+.header_text p span {
+	font-family: Trebuchet MS;
+	font-size: 30px;
+}
+.nav_overlay {
+	overflow: hidden;
+	background: url('../img/navOverlay.png');
+	opacity: 0.3;
+	filter: brightness(1.15);
+	height: 50px;
+	width: 100%;
+}
+section {
+	display: flex;
+	flex-wrap: wrap;
+}
+section nav {
+	flex-basis: 100%;
+	position: relative;
+	height: 50px;
+	width:100%;
+	background: linear-gradient(to bottom, #58d061, #4db343);
+}
+.controls {
+	position: absolute;
+	top:14px;
+	left:15px;
+}
+#search {
+	outline: none;
+	width: 200px;
+	padding:4px;
+	border:0;
+	position: relative;
+}
+
+::placeholder {
+	padding-left:2px;
+	color:#c9c9c9;
+	font-size:14px;
+	font-family: sans-serif;
+}
+.price_filter {
+	width: 300px;
+	font-family: sans-serif;
+	font-size: 14px;
+	color:#fff;
+	position: absolute;
+	left:220px;
+	top:4px;
+}
+
+.welcome-msg {
+    width: 300px;
+    font-family: sans-serif;
+    font-size: 16px;
+    color:#fff;
+    position: absolute;
+    left:670px;
+    top:16px;
+}
+.price_filter span#underlined {
+	padding-bottom: 2px;
+	border-bottom: 1px solid #fff;
+}
+.price_filter span {
+	cursor: pointer;
+}
+.price_filter a {
+    text-decoration: none;
+    color: inherit;
+}
+.reg {
+	background: #fff;
+	border-radius: 5px;
+	padding:2px 8px;
+	position: absolute;
+	right:15px;
+	top:14px;
+	box-shadow: 0 4px 4px 0 rgba(0,0,0,0.2);
+	transition: 0.5s;
+}
+.reg:hover {
+	background: #53c353;
+}
+.reg:hover a{
+	color:#fff;
+}
+.reg a {
+		text-decoration: none;
+	color:#53c353;
+	font-size: 14px;
+	font-family: sans-serif;
+}
+.objects {
+	margin-top: 15px;
+	flex-basis:722px;
+	border:2px solid #d9d9d9;
+	padding:15px;
+}
+.sidebar {
+	margin-top: 15px;
+	flex-basis: 222px;
+	margin-left: 15px;
+
+}
+.title {
+	font-size: 14px;
+	font-family: sans-serif;
+}
+.form_login {
+	display: flex;
+	flex-direction: column;
+	padding:15px;
+	width: 100%;
+	height: 250px;
+	border:2px solid #d9d9d9;
+    margin-bottom: 15px;
+}
+form input{
+	margin-top: 5px;
+	margin-bottom: 5px;
+	width: 100%;
+	padding:8px;
+	border-radius: 5px;
+	border:1px solid #e0e0e0;
+}
+.form_login .title {
+	margin-bottom: 15px;
+	text-align: center;
+}
+form label {
+	font-family: sans-serif;
+	font-size: 14px;
+}
+form input[type="submit"]
+{
+	border:0;
+	cursor: pointer;
+	outline: none;
+	color:#fff;
+	font-family: sans-serif;
+	font-size: 14px;
+	background: linear-gradient(to bottom, #58d061, #4db343);
+}
+.box_objects {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+
+}
+
+.object {
+	margin-top: 15px;
+	padding:10px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 275px;
+	border:1px solid #e0e0e0;
+	font-family: sans-serif;
+	font-size: 14px;
+	flex-basis:30%;
+}
+#btn {
+	width: 100%;
+	cursor: pointer;
+	outline: none;
+	padding:8px;
+	border-radius: 5px;
+	color:#fff;
+	font-family: sans-serif;
+	font-size: 14px;
+	border:0;
+	background: linear-gradient(to bottom, #58d061, #4db343);
+    text-align: center;
+    text-decoration: none;
+}
+ul {
+	margin-left:300px;
+	margin-top: 45px;
+	list-style: none;
+}
+ul li{
+	cursor: pointer;
+	font-family: sans-serif;
+	font-size: 14px;
+	display: inline-block;
+	padding:4px;
+	border:1px solid #e0e0e0;
+}
+ul li:nth-child(1)
+{
+	color:#fff;
+	background: #4db343;
+}
+
+.slider {
+	display: flex;
+	flex-direction: column;
+	padding:15px;
+	width: 100%;
+	border:2px solid #d9d9d9;
+}
+.slider .title {
+	text-align: center;
+	margin-bottom: 15px;
+}
+.slides {
+	display: flex;
+	justify-content: center;
+}
+footer {
+	margin-top: 15px;
+	height: 80px;
+	background: linear-gradient(to bottom, #58d061, #4db343);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+footer span {
+		font-family: sans-serif;
+	font-size: 14px;
+	color:#fff;
+	text-shadow: 0 5px 2px 0 rgba(0,0,0,1);
+}
+
+#search-form {
+    margin: -4px 0 0 0;
+    padding: 0;
+    padding: 0;
+}
+
+.description {
+    font-family: sans-serif;
+    line-height: 1.5em;
+}
+
+.desc-heading {
+    font-weight: bold;
+}
+
