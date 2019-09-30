@@ -3,6 +3,7 @@
 namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
+use PragmaRX\Tracker\Tracker;
 
 class AppServiceProvider extends ServiceProvider
 {

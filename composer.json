@@ -9,10 +9,12 @@
     "license": "MIT",
     "require": {
         "php": "^7.2",
+        "cartalyst/sentinel": "^3.0",
         "fideloper/proxy": "^4.0",
         "laravel/framework": "^6.0",
         "laravel/tinker": "^1.0",
-        "laravel/ui": "^1.0"
+        "laravel/ui": "^1.0",
+        "pragmarx/tracker": "^3.4"
     },
     "require-dev": {
         "barryvdh/laravel-ide-helper": "^2.6",

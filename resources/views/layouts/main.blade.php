@@ -12,7 +12,6 @@
 </head>
 <body>
 	<div class="wrapper">
-
 		<header>
 			<a href="{{url('/')}}"><img src={{asset("img/logo.png")}} alt="logo"></a>
 			<div class="header_text">
@@ -60,6 +59,9 @@
 					</div>
 				</div>
 				<div class="sidebar">
+                    <div class="slider">
+
+                    </div>
                     @guest
 					<div class="form_login">
 						<div class="title">Авторизация пользователя</div>
