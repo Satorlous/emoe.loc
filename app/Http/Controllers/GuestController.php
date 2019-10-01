@@ -41,4 +41,9 @@ class GuestController extends Controller
             'objects' => $objects,
         ]);
     }
+
+    public function updateCurrent()
+    {
+
+    }
 }
