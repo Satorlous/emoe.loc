@@ -3,7 +3,9 @@
 namespace App\Http\Controllers;
 
 use App\House;
+use App\UniUser;
 use Illuminate\Http\Request;
+use mysql_xdevapi\Session;
 
 class GuestController extends Controller
 {
@@ -42,8 +44,15 @@ class GuestController extends Controller
         ]);
     }
 
-    public function updateCurrent()
+    public function UpdateMonitor()
     {
-
+        $visitors = UniUser::all();
+        $guestCount = $visitors->where('guest', true)->count();
+        $authorizedUsers = $visitors->where('guest', false);
+        $data = [
+            'guestCount' => $guestCount,
+            'users' => $authorizedUsers,
+        ];
+        return json_encode($data);
     }
 }
