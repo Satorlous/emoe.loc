@@ -7,6 +7,7 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
 	<link rel="stylesheet" type="text/css" href={{asset("css/style.css")}}>
 	<link rel="shorticon icon" type="image/png" href={{asset("img/favicon.png")}}>
+    <meta name="csrf-token" content="{{ csrf_token() }}">
     <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
     <script src="{{asset('js/main.js')}}"></script>
 </head>
@@ -60,7 +61,10 @@
 				</div>
 				<div class="sidebar">
                     <div class="slider">
-
+                        <span><b>Сейчас на сайте:</b></span>
+                        <ul class="loggedUsers">
+                        </ul>
+                        <div><b>Гостей:</b> <span class="guestCounter"></span></div>
                     </div>
                     @guest
 					<div class="form_login">

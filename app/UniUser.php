@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class UniUser extends Model
 {
-    protected $table = "users_online";
+    protected $table = "sessions";
 
 
 }
